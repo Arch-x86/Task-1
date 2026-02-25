@@ -7,5 +7,10 @@ We will be exploring how Base64 works in the SMTP (simple mail transfer protocal
 
 ## Procedure to see the work of Base64 encoding in SMTP.
 
-# STEP 1
-<img src="./Diagram/image.png" width="300" height="300">
+## STEP 1: opening the Base64 one and inserting the data.
+
+At first we will open the Base64 one application. It is a free application to show how data is converted into ASCII text using Base64 encoding.
+ 
+<img src="./Diagram/Base64_one.png" width="400" height="200">
+
+ 
