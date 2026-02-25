@@ -11,6 +11,6 @@ We will be exploring how Base64 works in the SMTP (simple mail transfer protocal
 
 At first we will open the Base64 one application. It is a free application to show how data is converted into ASCII text using Base64 encoding.
  
-<img src="./Diagram/Base64_one.png" width="400" height="200">
+<img src="./Diagram/Base64_one.png" width="800" height="400">
 
  
