@@ -53,3 +53,15 @@ Content-Transfer-Encoding: base64
 SGVsbG8gV29ybGQh
 .
 ```
+## Step 5: Capturing the packet in the Wireshark. 
+After sending the packages, the wireshark starts to capture it and displays the captured packet.
+
+<img src="./Diagram/Captured_packets.png" width="800" height="400">
+
+Then we have to right click it and go to the Follow sectio and press (ctrl+Alt+Shift+T). It will open the new window and show the information of the captured packet.
+
+<img src="./Diagram/Decription
+.png" width="800" height="400">
+
+We can see that the Base64 Encoded code is same in the captured captured during the transmission and originally converted text in the Base64 one tool.
+
