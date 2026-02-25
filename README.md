@@ -5,7 +5,7 @@ We will be exploring how Base64 works in the SMTP (simple mail transfer protocal
 1. Base64 one
 2. Wireshark 
 
-## Procedure to see the work of Base64 encoding in SMTP.
+## Procedure 
 
 ## Step 1: opening the Base64 one and inserting the data.
 
@@ -19,3 +19,37 @@ After opening the tool we will input the text and encode it in the Base64 format
 
 <img src="./Diagram/Encoded.png" width="800" height="400">
 
+## Step 3: Opening the wireshark in loopback mode and filtering the packages for SMTP.
+We have to open the wireshark in the loopback mode and start capturing the packet. We have to enter "tcp.port == 1025" in the filter bar.After that we click the start button and start capturing the packet .
+
+<img src="./Diagram/Wireshark.png" width="800" height="400">
+
+## Step 4: Creating a localized testing environment
+we will create a localized testing environment on our computer for testing. It means that both sender and receiver will be our device. 
+
+At first we will create a receiver by using the library aiosmtpd. The aiosmtpd doesnot comes preinstalled so we have to install it first. So we have to open the powershell and input this command.
+```text
+pip install aiosmtpd
+```
+ 
+After installing aiosmtpd we will create a channel to receive the Package. For that we will execute the command below.
+```text
+aiosmtpd -n -l localhost:1025
+```
+After that we will create a sender in the terminal. For that we will have to execute the following commands given below.
+```text
+telnet localhost 1025
+EHLO localhost
+MAIL FROM:<test@me.com>
+RCPT TO:<you@me.com>
+DATA
+```
+After that we have to enter this command to send the SMTP package.
+```text
+Subject: Base64 Lab
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+SGVsbG8gV29ybGQh
+.
+```
