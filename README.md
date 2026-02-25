@@ -62,5 +62,6 @@ Then we have to right click it and go to the Follow sectio and press (ctrl+Alt+S
 
 <img src="./Diagram/Decription.png" width="600" height="500">
 
-We can see that the Base64 Encoded code is same in the captured captured during the transmission and originally converted text in the Base64 one tool.
+We can see that the Base64 Encoded code is same in the captured packet during the transmission and originally converted text in the Base64 one tool.
+
 
