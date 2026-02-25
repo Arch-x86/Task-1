@@ -60,8 +60,7 @@ After sending the packages, the wireshark starts to capture it and displays the 
 
 Then we have to right click it and go to the Follow sectio and press (ctrl+Alt+Shift+T). It will open the new window and show the information of the captured packet.
 
-<img src="./Diagram/Decription
-.png" width="800" height="400">
+<img src="./Diagram/Decription.png" width="800" height="400">
 
 We can see that the Base64 Encoded code is same in the captured captured during the transmission and originally converted text in the Base64 one tool.
 
