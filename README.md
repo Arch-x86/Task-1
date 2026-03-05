@@ -19,7 +19,7 @@ After opening the tool we will input the text and encode it in the Base64 format
 
 <img src="./Diagram/Encoded.png" width="800" height="400">
 
-## Step 3: Opening the wireshark in loopback mode and filtering the packages for SMTP.
+## Step 3: Opening the wireshark in loopback mode and filtering the packages for TCP.
 We have to open the wireshark in the loopback mode and start capturing the packet. We have to enter "tcp.port == 1025" in the filter bar.After that we click the start button and start capturing the packet .
 
 <img src="./Diagram/Wireshark.png" width="800" height="400">
@@ -63,6 +63,9 @@ Then we have to right click it and go to the Follow sectio and press (ctrl+Alt+S
 <img src="./Diagram/Decription.png" width="600" height="500">
 
 We can see that the Base64 Encoded code is same in the captured packet during the transmission and originally converted text in the Base64 one tool.
+So this is how Base64 works in protocal like SMTP.
 
+# License
+This is under the MIT-lisense. To see more about [LICENSE](https://github.com/Arch-x86/Task-1/blob/main/LICENSE) HERE.
 
-## Author -Ankit thebe.
+## Author -Ankit Thebe.
